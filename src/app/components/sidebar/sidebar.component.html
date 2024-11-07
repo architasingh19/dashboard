@@ -1,0 +1,14 @@
+<div class="sidebar-conatiner">
+    <div class="logo"></div>
+    <div class="d-flex flex-column">
+        <ng-container *ngFor="let button of sidebarBtn">
+            <div class="d-flex flex-row gap-2">
+                <div>
+                    <img [src]="button.image" [alt]="button.name">
+                </div>
+                <div>{{button.name}}</div>
+            </div>
+
+        </ng-container>
+    </div>
+</div>
